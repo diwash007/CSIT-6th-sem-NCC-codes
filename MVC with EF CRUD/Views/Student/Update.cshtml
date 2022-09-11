@@ -1,0 +1,10 @@
+@model Student
+
+<form asp-controller="Student" asp-action="Update" method="post">
+    Id: <input asp-for="studentId">
+    Name: <input asp-for="Name">
+    ROll: <input asp-for="RollNo">
+    class: <input asp-for="Class">
+    <br>
+    <input type="submit" value="submit">
+</form>

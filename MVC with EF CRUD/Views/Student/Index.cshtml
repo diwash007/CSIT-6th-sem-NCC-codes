@@ -1,0 +1,11 @@
+@model IEnumerable<Student>
+
+@foreach (var s in Model) {
+    @s.Name; <span>&nbsp;</span>
+    @s.studentId;<span>&nbsp;</span>
+    @s.RollNo;<span>&nbsp;</span>
+    @s.Class; <span>&nbsp;</span>
+    <form method="POST" asp-route-id="@s.studentId" asp-action="Delete">
+    <input type="submit" value="delete" ><br>
+    </form >
+}
